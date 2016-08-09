@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:fillViewport="false"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTRO"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:textSize="40sp"
+                android:textColor="#004d97" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/nombreText"
+                android:hint="Nombre (s)"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="#004d97"
+                android:textColorHint="#004d97"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                android:selectAllOnFocus="false"
+                android:textColorHighlight="@color/colorAccent" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/apellidoPText"
+                android:hint="Apellido Paterno"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="#004d97"
+                android:textColorHint="#004d97"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/apellidoMText"
+                android:hint="Apellido Materno"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="#004d97"
+                android:textColorHint="#004d97"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/mailText"
+                android:hint="Correo electrónico"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColorHint="#004d97"
+                android:textColor="#004d97"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Área"
+                android:id="@+id/textView"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:textColor="#004d97"
+                android:layout_gravity="center_horizontal" />
+
+            <Spinner
+                android:layout_width="204dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tipoSpinner"
+                android:spinnerMode="dropdown"
+                android:text="Selecciona"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center" />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/passText"
+                android:layout_marginTop="30dp"
+                android:hint="Crea tu contraseña"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColorHint="#004d97"
+                android:textColor="#004d97"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/cnfPassText"
+                android:hint="Confirma tu contraseña"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="#004d97"
+                android:textColorHint="#004d97"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="205dp"
+                android:layout_height="67dp"
+                android:id="@+id/sigRegistroBtn"
+                android:layout_marginTop="40dp"
+                android:onClick="moduloRegistro"
+                android:textColor="#ffffff"
+                android:background="@drawable/enviar"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -65,8 +65,11 @@
         android:description="@string/app_description"
         android:launchMode="singleTask"
         android:allowBackup="true"
-        android:theme="@style/SampleAppsTheme"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:supportsRtl="true"
         >
+
 
 
         <!--
@@ -90,11 +93,6 @@
             android:screenOrientation="portrait"
             android:noHistory="true"
             >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
@@ -183,6 +181,42 @@
             android:launchMode="singleTask"
             >
         </activity>
+
+
+        <!-- BEGIN - PEPSICO -->
+
+        <activity
+            android:name="com.devworms.pepsico.agendaActivity" />
+        <activity
+            android:name="com.devworms.pepsico.agendaDetalleActivity" />
+        <activity
+            android:name="com.devworms.pepsico.LoginActivity" />
+        <activity
+            android:name="com.devworms.pepsico.MainActivity"/>
+        <activity
+            android:name="com.devworms.pepsico.menuActActivity" />
+        <activity
+            android:name="com.devworms.pepsico.MenuPepsico" />
+        <activity
+            android:name="com.devworms.pepsico.PistasActivas" />
+        <activity
+            android:name="com.devworms.pepsico.Rally" />
+        <activity
+            android:name="com.devworms.pepsico.RallyCode"/>
+        <activity
+            android:name="com.devworms.pepsico.RegistroExito" />
+        <activity
+            android:name="com.devworms.pepsico.SplashInicioActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- END - PEPSICO -->
+
+
 
     </application>
 

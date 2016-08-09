@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondoagen">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView2" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AGENDA"
+                    android:id="@+id/textView9"
+                    android:textSize="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#004D97" />
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/lunesBtn"
+                    android:background="@drawable/botonl"
+                    android:textColor="#ffffff"
+                    android:onClick="agendaActScreen"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/martesBtn"
+                    android:layout_below="@+id/lunesBtn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/botonma"
+                    android:textColor="#ffffff"
+                    android:onClick="agendaActScreen"/>
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/miercBtn"
+                    android:layout_below="@+id/martesBtn"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/botonmi"
+                    android:textColor="#ffffff"
+                    android:layout_alignRight="@+id/martesBtn"
+                    android:layout_alignEnd="@+id/martesBtn"
+                    android:onClick="agendaActScreen"
+                    android:layout_marginBottom="20dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

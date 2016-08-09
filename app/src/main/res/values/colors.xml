@@ -10,5 +10,9 @@
     
     <color name="overlay_bottom_bar_separators">#333333</color>
     <color name="overlay_bottom_bar_background">#1E1E1E</color>
+
+    <color name="colorAccent">#ec7f30</color>
+    <color name="colorPrimary">#00bfff</color>
+    <color name="colorPrimaryDark">#00bfff</color>
     
 </resources>

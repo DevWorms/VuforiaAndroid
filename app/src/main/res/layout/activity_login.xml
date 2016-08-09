@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="@drawable/fondo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BIENVENIDO"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:textSize="36sp"
+            android:textColor="#ec7f30" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/mailText"
+            android:hint="Correo electrónico"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColorHint="#004d97"
+            android:textColor="#004d97"
+            android:textSize="20sp"
+            android:layout_marginTop="80dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passText"
+            android:hint="Contraseña"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="#004d97"
+            android:textColorHint="#004d97"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="205dp"
+            android:layout_height="40dp"
+            android:id="@+id/sigRegistroBtn"
+            android:layout_marginTop="30dp"
+            android:onClick="moduloLogin"
+            android:background="@drawable/login"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aún no te has registrado"
+            android:id="@+id/textView7"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginTop="120dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrate aquí"
+            android:id="@+id/txtRegistro"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="#004d97"
+            android:onClick="pantallaRegistro"/>
+
+</LinearLayout>
